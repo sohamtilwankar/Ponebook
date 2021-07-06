@@ -1,0 +1,15 @@
+
+dicti = {}
+for i in range(100):
+    whattowant = input("Do you want to register or access phonebook or list?\n")
+    if whattowant == "register":
+        name = input("What is the name\n")
+        numberph = input("what is phone number\n")
+        dicti [name] = numberph
+        print("done!")
+
+    elif whattowant == "access":        
+        access = input("Which one you need\n")
+        print(f"{dicti.get(access)} this is what you need")
+    elif whattowant == "list":
+        print(dicti)    
